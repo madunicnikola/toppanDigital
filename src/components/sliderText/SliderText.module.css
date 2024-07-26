@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    margin-right: 1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 18px;
+    color: rgba(87,87,87,255);
+}
+
+.paragraph {
+    font-size: 20px;
+    color: rgba(241,241,241,255);
+}
+
+.shopButton {
+    background-color: rgba(81,198,218,255);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin: 2rem;
+    color: rgba(241,241,241,255);
+    text-transform: uppercase;
+    font-style: bold;
+    cursor: pointer;
+}
+
+.checkout {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem 0.5rem;
+}
+
+.priceText {
+    color: rgba(87,87,87,255);
+}
+
+.priceNum {
+    color: rgba(241,241,241,255);
+}
+.checkoutInput {
+    background-color: transparent;
+    border: 1px solid rgba(63,63,63,255);
+    color: rgba(241,241,241,255);
+    padding: 0.3rem;
+    width: 5rem;
+}
+.checkoutHeader{
+    color: rgba(87,87,87,255);
+    margin-bottom: 0.3rem;
+}
