@@ -1,13 +1,14 @@
 body {
     background-color: rgba(23,23,23,255);
-}
-.home {
-    background-image: url("/public/images/slider/mainImage.png");
-    background-position: -40%;
-    background-repeat: no-repeat;
-    background-size: 45%;
+    width: 100%;
+    max-width: 100%;
 }
 .homeMain {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+}
+.homeSliderText {
+    float: left;
+}
+.homeSlider {
+    float: right;
 }
