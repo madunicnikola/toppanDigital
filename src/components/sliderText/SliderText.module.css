@@ -9,6 +9,7 @@
     justify-content: space-between;
     width: 50vw;
     margin: 1rem;
+    margin-top: 1.5rem;
 }
 
 .column {
@@ -17,7 +18,6 @@
     gap: 20px;
     width: 50%;
 }
-
 .row {
     display: flex;
     align-items: center;
@@ -28,8 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px; 
-    height: 40px; 
+    width: 3rem; 
+    height: 3rem; 
     margin-right: 1rem;
 }
 
@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: column;
     margin: 1rem;
+    margin-top: 5rem;
 }
 
 .header {
@@ -89,13 +90,17 @@
     width: 5rem;
 }
 .checkoutHeader{
-    color: rgba(87,87,87,255);
+    color: rgba(133,133,133,255);
     margin-bottom: 0.3rem;
+    font-weight: 400;
+    font-size: 12px;
 }
 .sliderTitleContainer {
     display: flex;
     flex-direction: column;
     margin: 1rem;
+    font-size: 60px;
+    line-height: 1.2;
 }
 .sliderTitleHeaderFirst {
     color: rgba(81,198,218,255);
@@ -103,21 +108,24 @@
 }
 .sliderTitleHeaderSecond {
     color: rgba(241,241,241,255);
-    font-weight: 200;
+    font-weight: 100;
 }
 .sliderTitleDesc {
-    color: rgba(241,241,241,255);
+    color: rgba(133,133,133,255);
+    font-size: 14px;
 }
 .verticalFooter {
-    height: 400px;
+    height: 35rem;
+    width: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 7rem;
 }
 .verticalLine {
     height: 200px;
-    border-left: 2px solid rgba(81,198,218,255);
+    border-left: 4px solid rgba(81,198,218,255);
     margin-top: 4rem;
 }
 .followUs {
@@ -126,11 +134,20 @@
     color: rgba(81,198,218,255);
     text-transform: uppercase;
     transform: rotate(90deg);
+    margin-top: 2.5rem;
+    white-space: nowrap;
 }
 .footerIcons {
     width: 1.2rem;
     height: 1.2rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.footerNumber {
+    font-size: 60px;
+    color: rgba(241,241,241,255);
+    margin-top: 2rem;
+    margin-left: 3rem;
 }

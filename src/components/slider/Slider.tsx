@@ -21,12 +21,14 @@ const Slider: React.FC = () => {
             <img src={mainImage} alt="Main" className={styles.mainImage} />
             <div className={styles.thumbnails}>
                 {images.map((image, index) => (
-                    <img
-                        key={index}
-                        src={image}
-                        alt='Thumbnail'
-                        className={styles.thumbnail}
-                    />
+                    <div className={styles.thumbnail}>
+                        <img
+                            key={index}
+                            src={image}
+                            alt='Thumbnail'
+                            className={styles.thumbnailImage}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

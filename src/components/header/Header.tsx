@@ -21,9 +21,9 @@ const Header = () => {
                 <a href="/">Contact Us</a>
             </nav>
             <div className={styles.headerIcons}>
-               <img src='/icons/searchIconW.png' alt='Search' className={styles.icon}/>
-               <img src='/icons/cartIconW.png' alt='Store' className={styles.icon}/>
-               <img src='/icons/userIconW.png' alt='Profile' className={styles.icon}/>
+               <img src='/icons/header/searchIconW.png' alt='Search' className={styles.icon}/>
+               <img src='/icons/header/cartIconW.png' alt='Store' className={styles.icon}/>
+               <img src='/icons/header/userIconW.png' alt='Profile' className={styles.icon}/>
             </div>
         </div>
     );

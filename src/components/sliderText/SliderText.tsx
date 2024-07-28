@@ -4,27 +4,30 @@ const SliderText = () => {
     return (
         <div className={styles.slider}>
             <div className={styles.verticalFooter}>
-                <img src='/icons/googleIconB.png' className={styles.footerIcons}/>
+                <img src='/icons/footer/googleIconB.png' className={styles.footerIcons}/>
+                <img src='/icons/footer/twitterIconB.png' className={styles.footerIcons}/>
+                <img src='/icons/footer/facebookIconB.png' className={styles.footerIcons}/>
                 <p><span className={styles.followUs}>Follow Us</span></p>
                 <div className={styles.verticalLine}>
                 </div>
+                <p className={styles.footerNumber}>01</p>
             </div>
-            <div>
+            <div className={styles.sliderContent}>
                 <div className={styles.sliderTitleContainer}>
                     <h2><span className={styles.sliderTitleHeaderFirst}>Mavic 2</span><span className={styles.sliderTitleHeaderSecond}> Pro</span></h2>
-                    <p className={styles.sliderTitleDesc}>The Mavic 2 offers iconic Hasselblad image quality on the Pro and a high-performance zoom lens on the Zoom.</p>
+                    <p className={styles.sliderTitleDesc}>The Mavic 2 offers iconic Hasselblad image quality on the Pro and a high-performance <br /> zoom lens on the Zoom.</p>
                 </div>
                 <div className={styles.container}>
                     <div className={styles.column}>
                         <div className={styles.row}>
-                            <img src="/icons/droneIconB2.png" alt='Drone' className={styles.icon} />
+                            <img src="/icons/slider/droneIconB2.png" alt='Drone' className={styles.icon} />
                             <div className={styles.text}>
                                 <h2 className={styles.header}>Camera</h2>
                                 <p className={styles.paragraph}>20 MP 1" CMOS Sensor</p>
                             </div>
                         </div>
                         <div className={styles.row}>
-                            <img src="/icons/droneIconB.png" alt='Drone' className={styles.icon} />
+                            <img src="/icons/slider/droneIconB.png" alt='Drone' className={styles.icon} />
                             <div className={styles.text}>
                                 <h2 className={styles.header}>Flight Time</h2>
                                 <p className={styles.paragraph}>31 minutes (72 kph)</p>
@@ -33,14 +36,14 @@ const SliderText = () => {
                     </div>
                     <div className={styles.column}>
                         <div className={styles.row}>
-                            <img src="/icons/cameraIconB.png" alt='Camera' className={styles.icon} />
+                            <img src="/icons/slider/cameraIconB.png" alt='Camera' className={styles.icon} />
                             <div className={styles.text}>
                                 <h2 className={styles.header}>Gimbal</h2>
                                 <p className={styles.paragraph}>3-Axis</p>
                             </div>
                         </div>
                         <div className={styles.row}>
-                            <img src="/icons/videoIconB.png" alt='Video' className={styles.icon} />
+                            <img src="/icons/slider/videoIconB.png" alt='Video' className={styles.icon} />
                             <div className={styles.text}>
                                 <h2 className={styles.header}>Video</h2>
                                 <p className={styles.paragraph}>4K: 3840×2160/30p</p>

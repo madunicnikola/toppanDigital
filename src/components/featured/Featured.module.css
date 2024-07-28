@@ -1,0 +1,48 @@
+.featuredMain {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+.featuredText {
+    float: left;
+    margin: 2rem;
+}
+.featuredText h2 {
+    font-size: 42px;
+    color: rgba(81,198,218,255);
+    font-weight: 500;
+}
+.featuredText p {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.featuredText hr {
+    width: 30%;
+    border: 1px solid rgba(81,198,218,255);
+}
+.featuredText ul li, .featuredText p {
+    color: rgba(241,241,241,255);
+}
+.featuredImage {
+    float: right;
+    position: absolute;
+    left: 60%;
+    margin-top: 4rem;
+}
+.featuredImage img {
+    width: 20rem;
+    height: 15rem;
+}
+.featuredSpecs {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    
+}
+
+.specsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+    line-height: 2;
+}
