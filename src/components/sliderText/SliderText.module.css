@@ -18,10 +18,12 @@
     gap: 20px;
     width: 50%;
 }
+
 .row {
     display: flex;
     align-items: center;
     gap: 10px; 
+    height: 10vh;
 }
 
 .icon {
@@ -150,4 +152,65 @@
     color: rgba(241,241,241,255);
     margin-top: 2rem;
     margin-left: 3rem;
+}
+@media (max-width: 768px) {
+    .sliderTitleContainer {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width: 30%;
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.5rem; 
+        height: 1.5rem; 
+        margin-right: 0.5rem;
+    }
+    .header {
+        font-size: 14px;
+        color: rgba(87,87,87,255);
+        font-weight: 500;
+        width: 20vw;
+    }
+    .paragraph {
+        font-size: 16px;
+        color: rgba(241,241,241,255);
+    }
+    .footerNumber {
+        display: none;
+    }
+}
+@media (min-width: 1900px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .verticalFooter {
+        height: 40rem;
+        width: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+    .verticalLine {
+        height: 260px;
+        border-left: 4px solid rgba(81,198,218,255);
+        margin-top: 4rem;
+    }
+    .shopNow {
+        margin-top: 1.5rem;
+    }
 }

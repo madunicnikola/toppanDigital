@@ -36,3 +36,21 @@
     width: 2rem;
     height: 1.5rem;
 }
+@media (max-width: 768px) {
+    .slider {
+        margin-top: 5vh;
+        width: 80vw;
+        max-width: 800px;
+    }
+    .mainImage {
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+    }
+}
+@media (min-width: 1900px) {
+    .mainImage {
+        width: 100%;
+        max-width: 800px;
+    }
+}

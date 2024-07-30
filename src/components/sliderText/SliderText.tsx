@@ -1,21 +1,32 @@
+import React, { useState } from 'react';
+import ProductList from '../products/ProductList';
 import styles from './SliderText.module.css';
 
-const SliderText = () => {
+const SliderText: React.FC = () => {
+    const [showProductList, setShowProductList] = useState(false);
+
+    const handleShopNowClick = () => {
+        setShowProductList(true);
+    };
+
+    const handleCloseProductList = () => {
+        setShowProductList(false);
+    };
+
     return (
         <div className={styles.slider}>
             <div className={styles.verticalFooter}>
-                <img src='/icons/footer/googleIconB.png' className={styles.footerIcons}/>
-                <img src='/icons/footer/twitterIconB.png' className={styles.footerIcons}/>
-                <img src='/icons/footer/facebookIconB.png' className={styles.footerIcons}/>
+                <img src='/icons/footer/googleIconB.png' className={styles.footerIcons} alt="Google Icon"/>
+                <img src='/icons/footer/twitterIconB.png' className={styles.footerIcons} alt="Twitter Icon"/>
+                <img src='/icons/footer/facebookIconB.png' className={styles.footerIcons} alt="Facebook Icon"/>
                 <p><span className={styles.followUs}>Follow Us</span></p>
-                <div className={styles.verticalLine}>
-                </div>
+                <div className={styles.verticalLine}></div>
                 <p className={styles.footerNumber}>01</p>
             </div>
             <div className={styles.sliderContent}>
                 <div className={styles.sliderTitleContainer}>
                     <h2><span className={styles.sliderTitleHeaderFirst}>Mavic 2</span><span className={styles.sliderTitleHeaderSecond}> Pro</span></h2>
-                    <p className={styles.sliderTitleDesc}>The Mavic 2 offers iconic Hasselblad image quality on the Pro and a high-performance <br /> zoom lens on the Zoom.</p>
+                    <p className={styles.sliderTitleDesc}>The Mavic 2 offers iconic Hasselblad image quality on the Pro and a high-performance zoom lens on the Zoom.</p>
                 </div>
                 <div className={styles.container}>
                     <div className={styles.column}>
@@ -58,15 +69,17 @@ const SliderText = () => {
                     </div>
                     <div>
                         <div className={styles.checkout}>
-                            <button className={styles.shopButton}>Shop Now</button>
+                            <button className={styles.shopButton} onClick={handleShopNowClick}>Shop Now</button>
                         </div>
                         <div className={styles.checkout}>
                             <h3 className={styles.checkoutHeader}>Qty</h3>
-                            <input defaultValue={1} className={styles.checkoutInput}></input>
+                            <input defaultValue={1} className={styles.checkoutInput} />
                         </div>
                     </div>
                 </div>
+                {showProductList && <ProductList onClose={handleCloseProductList} />}
             </div>
+            {showProductList && <div className={styles.blurBackground}></div>}
         </div>
     );
 };

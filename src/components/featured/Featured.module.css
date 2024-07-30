@@ -39,10 +39,34 @@
     gap: 3rem;
     
 }
-
 .specsList {
     list-style-type: none;
     padding: 0;
     margin-top: 2rem;
     line-height: 2;
+}
+@media (max-width: 768px) {
+    .featuredImage img {
+        position: relative;
+        width: 15rem;
+        height: 10rem;
+        z-index: -1;
+    }
+    .featuredImage {
+        left: 60%;
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 1900px) {
+    .featuredMain {
+        height: 40vh;
+        align-items: center;
+    }
+    .featuredImage img {
+        width: 30rem;
+        height: 25rem;
+    }
+    .featuredText {
+        margin: 5rem;
+    }
 }
